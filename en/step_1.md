@@ -1,4 +1,4 @@
-- If you want to generate a list using Python, it is quite easy to do so using a `for ` loop.
+- If you want to generate a list using Python, it is quite easy to do so using a **for loop**.
 
 	```python
 	new_list = []
@@ -12,7 +12,7 @@
 	```
 
 
-- The same list can be created in a single line using a construct that is common in many programming languages, called a list comprehension.
+- The same list can be created in a single line using a construct that exists in many programming languages: a **list comprehension**.
 
 	```python
 	new_list = [i for i in range(10)]
@@ -46,7 +46,7 @@
 	[2, 4, 6, 8, 10]
 	```
 
-- And string operations can also be done as well.
+- String operations can be done as well.
 
     ```python
 	verbs = ['shout', 'walk', 'see']
@@ -61,7 +61,7 @@
 - You can also extend lists quite easily.
 
 	```python
-	present participleanimals = ['cat', 'dog', 'fish']
+	animals = ['cat', 'dog', 'fish']
 	animals = animals + [animal.upper() for animal in animals]
 	```
 	
