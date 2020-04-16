@@ -1,72 +1,72 @@
-- If you want to generate a list using Python, it is quite easy to do so using a **for loop**.
+- Als je een lijst wilt genereren met Python, is het vrij eenvoudig om dit te doen met een **for lus**.
 
     ```python
-    new_list = []
-    for i in range(10):
-        new_list.append(i)
+    nieuwe_lijst = []
+for i in range(10):
+    nieuwe_lijst.append(i)
     ```
 
     ```python
-    >>> new_list
-    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    >>> nieuwe_lijst
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     ```
 
 
-- The same list can be created in a single line using a construct that exists in many programming languages: a **list comprehension**.
+- Dezelfde lijst kan op één regel worden gemaakt met behulp van een constructie die in veel programmeertalen bestaat: een **list comprehension (lijstsamenstelling)**.
 
     ```python
-    new_list = [i for i in range(10)]
+    nieuwe_lijst = [i for i in range(10)]
     ```
 
     ```python
-    >>> new_list
-    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    >>> nieuwe_lijst
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     ```
-- You can use any **iterable** in a list comprehension, so making a list from another list is easy.
+- Je kunt elke **iterable (herhaalbare)** in een lijstsamenstelling gebruiken, dus het is gemakkelijk om een lijst uit een andere lijst te maken.
 
     ```python
-    numbers = [1, 2, 3, 4, 5]
-    numbers_copy = [number for number in numbers]
-    ```
-
-    ```python
-    >>> numbers_copy
-    [1, 2, 3, 4, 5]
-    ```
-
-- You can also do calculations within a list comprehension.
-
-    ```python
-    numbers = [1, 2, 3, 4, 5]
-    double = [number * 2 for number in numbers]
+    getallen = [1, 2, 3, 4, 5]
+getallen_kopie = [getal for getal in getallen]
     ```
 
     ```python
-    >>> double
-    [2, 4, 6, 8, 10]
+    >>> getallen_kopie
+[1, 2, 3, 4, 5]
     ```
 
-- String operations can be done as well.
+- Je kunt ook berekeningen uitvoeren binnen een lijstsamenstelling.
 
     ```python
-    verbs = ['shout', 'walk', 'see']
-    present_participle = [word + 'ing' for word in verbs]
-    ```
-
-    ```python
-    >>> present_participle
-    ['shouting', 'walking', 'seeing']
-    ```
-
-- You can also extend lists quite easily.
-
-    ```python
-    animals = ['cat', 'dog', 'fish']
-    animals = animals + [animal.upper() for animal in animals]
+    getallen = [1, 2, 3, 4, 5]
+dubbel = [getal * 2 for getal in getallen]
     ```
 
     ```python
-    >>> animals
-    ['cat', 'dog', 'fish', 'CAT', 'DOG', 'FISH']    
+    >>> dubbel
+[2, 4, 6, 8, 10]
+    ```
+
+- Stringbewerkingen kunnen ook worden uitgevoerd.
+
+    ```python
+    werkwoorden = ['roepen', 'lopen', 'kijken']
+onvoltooid_deelwoorden = [woord + 'd' for woord in werkwoorden]
+    ```
+
+    ```python
+    >>> onvoltooide_deelwoorden
+['roepend', 'lopend', 'kijkend']
+    ```
+
+- Je kunt lijsten ook vrij gemakkelijk uitbreiden.
+
+    ```python
+    dieren = ['kat', 'hond', 'vis']
+dieren = dieren + [dier.upper() for dier in dieren]
+    ```
+
+    ```python
+    >>> dieren
+['kat', 'hond', 'vis', 'KAT', 'HOND', 'VIS']    
     ```
 	
