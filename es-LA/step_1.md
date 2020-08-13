@@ -1,72 +1,72 @@
-- If you want to generate a list using Python, it is quite easy to do so using a **for loop**.
+- Si quieres crear una lista con Python, es bastante fácil hacerlo con un **bucle for**.
 
     ```python
-    new_list = []
+    nueva_lista = []
     for i in range(10):
-        new_list.append(i)
+        nueva_lista.append(i)
     ```
 
     ```python
-    >>> new_list
+    >>> nueva_lista
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     ```
 
 
-- The same list can be created in a single line using a construct that exists in many programming languages: a **list comprehension**.
+- La misma lista se puede crear en una línea simple al usar una construcción que ya existe en muchos lenguajes de programación: la **comprensión de lista**.
 
     ```python
-    new_list = [i for i in range(10)]
+    nueva_lista = [i for i in range(10)]
     ```
 
     ```python
-    >>> new_list
+    >>> nueva_lista
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     ```
-- You can use any **iterable** in a list comprehension, so making a list from another list is easy.
+- Usa cualquier **iterable** en la comprensión de lista, es fácil crear listas de otras listas.
 
     ```python
-    numbers = [1, 2, 3, 4, 5]
-    numbers_copy = [number for number in numbers]
+    numeros = [1, 2, 3, 4, 5]
+    copiar_numeros = [numero for numero in numeros]
     ```
 
     ```python
-    >>> numbers_copy
+    >>> copiar_numeros
     [1, 2, 3, 4, 5]
     ```
 
-- You can also do calculations within a list comprehension.
+- También puedes hacer cálculos dentro de una comprensión de lista.
 
     ```python
-    numbers = [1, 2, 3, 4, 5]
-    double = [number * 2 for number in numbers]
+    numeros = [1, 2, 3, 4, 5]
+    doble = [numero * 2 for numero in numeros]
     ```
 
     ```python
-    >>> double
+    >>> doble
     [2, 4, 6, 8, 10]
     ```
 
-- String operations can be done as well.
+- Las operaciones de cadenas de carácteres también se pueden hacer.
 
     ```python
-    verbs = ['shout', 'walk', 'see']
-    present_participle = [word + 'ing' for word in verbs]
+    verbos = ['shout', 'walk', 'see']
+    participio_presente = [palabra + 'ing' for palabra in verbos]
     ```
 
     ```python
-    >>> present_participle
+    >>> participio_presente
     ['shouting', 'walking', 'seeing']
     ```
 
-- You can also extend lists quite easily.
+- Es posible extender las listas con bastante facilidad.
 
     ```python
-    animals = ['cat', 'dog', 'fish']
-    animals = animals + [animal.upper() for animal in animals]
+    animales = ['gato', 'perro', 'pez']
+    animales = animales + [animal.upper() for animal in animales]
     ```
 
     ```python
-    >>> animals
-    ['cat', 'dog', 'fish', 'CAT', 'DOG', 'FISH']    
+    >>> animales
+    ['gato', 'perro', 'pez', 'GATO', 'PERRO', 'PEZ']    
     ```
 	
